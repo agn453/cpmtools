@@ -1851,3 +1851,64 @@ diskdef svi707
   boottrk 3
   os 2.2
 end
+
+#AGN - add z80mbc and z80mbc2
+# Z80-MBC DISK 0 (TWO RESERVED TRACK FOR CP/M)
+diskdef z80mbc-d0
+  seclen 128
+  tracks 32
+  sectrk 32
+  blocksize 1024
+  maxdir 64
+  skew 0
+  boottrk 2
+  os 2.2
+end
+
+# Z80-MBC DISK 1
+diskdef z80mbc-d1
+  seclen 128
+  tracks 32
+  sectrk 32
+  blocksize 1024
+  maxdir 64
+  skew 0
+  boottrk 0
+  os 2.2
+end
+
+# Z80-MBC2 CP/M 2.2 DISK 0 ONLY (ONE RESERVED TRACK FOR CP/M 2.2)
+diskdef z80mbc2-d0
+  seclen 512
+  tracks 512
+  sectrk 32
+  blocksize 4096
+  maxdir 512
+  skew 0
+  boottrk 1
+  os 2.2
+end
+
+# Z80-MBC2 CP/M 2.2 DISK 1-15
+diskdef z80mbc2-d1
+  seclen 512
+  tracks 512
+  sectrk 32
+  blocksize 4096
+  maxdir 512
+  skew 0
+  boottrk 0
+  os 2.2
+end
+
+# Z80-MBC2 CP/M 3 (DISK 0-15)
+diskdef z80mbc2-cpm3
+  seclen 512
+  tracks 512
+  sectrk 32
+  blocksize 4096
+  maxdir 512
+  skew 0
+  boottrk 1
+  os 3
+end
